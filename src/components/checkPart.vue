@@ -1,7 +1,7 @@
 <template>
   <div class="w-[400px] px-6 md:p-0">
     <span class="text-center text-base"
-      >Join 60,000+ product managers receiving monthly updates on:</span
+      >Junte-se a  mais de 60,000 Product Managers recebendo updetes mensais em:</span
     >
     <div class="py-4">
       <div
@@ -21,14 +21,14 @@
 <script setup>
 const dataTable = [
   {
-    title: "Product discovery and building what matters",
+    title: "Descoberta de produtos e construção do que realmente importa",
   },
   {
-    title: "Measuring to ensure updates are a success",
+    title: "Medindo para garantir que as atualizações sejam bem-sucedidas",
   },
   {
-    title: "And much more!",
-  },
+    title: "E muito mais!",
+  }
 ];
 </script>
 

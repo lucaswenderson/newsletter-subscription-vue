@@ -1,9 +1,9 @@
 <template>
   <div class="grid gap-4 px-6 md:p-0 pb-6">
     <div class="flex justify-between items-center">
-      <span class="text-sm font-semibold">Email adress</span>
-      <span class="text-[#ff6257] text-sm font-semibold" v-if="error"
-        >Valid email required</span
+      <span class="text-sm font-semibold">Email</span>
+      <span class="text-[#ff4a3d] text-sm font-semibold" v-if="error"
+        >Necessario email valido</span
       >
     </div>
     <form class="w-full grid gap-4" @submit.prevent="submit">
@@ -14,7 +14,7 @@
             : 'border-[#9294a0]'
         "
         v-model="email"
-        placeholder="email@company.com"
+        placeholder="usuario@email.com"
         type="email"
         class="w-full p-3 rounded border outline-none"
       />
@@ -22,9 +22,9 @@
       <!-- :class="index === 5 || index === 6 ? 'red-color' : ''" -->
       <button
         type="submit"
-        class="bg-[#242742] text-white font-semibold w-full rounded p-3"
+        class="bg-[#ff693b] text-white font-semibold w-full rounded p-3"
       >
-        Subscribe to monthly newsletter
+        Se increva na minha newsletter :)
       </button>
     </form>
   </div>
@@ -42,7 +42,7 @@ function submit() {
     error.value = true;
   } else {
     error.value = false;
-    emit("submit");
+    emit("submit", email.value);
   }
   console.log(email.value);
 }
